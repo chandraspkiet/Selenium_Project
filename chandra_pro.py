@@ -5,8 +5,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+location = input("enter the chrome driver location location")
+
 #Step1
-driver = webdriver.Chrome(executable_path=r'D:\chromedriver_win32\chromedriver.exe')
+driver = webdriver.Chrome(executable_path=location)
 action = ActionChains(driver)
 driver.implicitly_wait(10)
 driver.get('https://www.google.com/')
